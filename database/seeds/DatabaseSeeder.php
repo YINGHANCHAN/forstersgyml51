@@ -15,10 +15,17 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         // $this->call(UserTableSeeder::class);
-
-        // call the table seeder
+        // disable foreign key check for this connection before running
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 
         $this->call(SchoolTableSeeder::class);
+        $this->call(StudentTableSeeder::class);
+
+        // call the table seeder
+        //supposed to only apply to a single connection and reset
+        //but I like to explicitly undo what I've done for clarity
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+
 
         Model::reguard();
     }
