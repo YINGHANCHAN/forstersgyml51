@@ -11,6 +11,10 @@
 |
 */
 
+/*
+ * Our home page
+ */
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
 });
