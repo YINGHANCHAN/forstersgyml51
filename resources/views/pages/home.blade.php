@@ -1,8 +1,7 @@
 @extends('layouts.master')
 
 @section('styles')
-    <link rel="stylesheet"
-          href="css/mystyles.css">
+    {!! Html::style('css/mystyles.css') !!}
 @endsection
 
 @section('content')

@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>>{{ config('forstersgym.title') }}</title>
-    <link rel="stylesheet"
-          href="css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="css/bootstrap-cosmo.min.css">
+    {!! Html::style('css/bootstrap.min.css') !!}
+    {!! Html::style('css/bootstrap-cosmo.min.css') !!}
+
     <!-- for extra styles -->
     @yield('styles')
 </head>
