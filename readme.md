@@ -43,3 +43,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 18.Using Layouts
 
 19.Installing LaravelCollective
+
+20.Display all the Schools - Part1
+
+Marked by StephanJ

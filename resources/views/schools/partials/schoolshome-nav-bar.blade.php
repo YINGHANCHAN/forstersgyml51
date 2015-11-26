@@ -10,5 +10,5 @@
                 <p class="navbar-text navbar-right">Coded by {{ config('forstersgym.coder') }} </p>
             </ul>
         </div>
-    </div>
-</nav>
+    </div> <!-- end navbar container -->
+</nav> <!-- close navbar -->
